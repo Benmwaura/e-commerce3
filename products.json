@@ -1,0 +1,72 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "The Original Super Donut",
+            "price": 135,
+            "image": "./images/product-1.JPEG"
+        },
+        {
+            "id": 2,
+            "title": "MICROWAVE ",
+            "price":  ksh 950,
+            "image": "./images/product-2.JPEG"
+        },
+        {
+            "id": 3,
+            "title": "500GB HARD DISK",
+            "price": 500,
+            "image": "./images/product-3.JPEG"
+        },
+        {
+            "id": 4,
+            "title": "The Original Super Donut",
+            "price": 999,
+            "image": "./images/product-4.JPEG"
+        },
+        {
+            "id": 5,
+            "title": "The Original Super Donut",
+            "price": 250,
+            "image": "./images/product-5.JPEG"
+
+        },
+        {
+            "id": 6,
+            "title": "The Original Super Donut",
+            "price": 850,
+            "image": "./images/product-6.JPEG"
+
+        },
+        {
+            "id": 7,
+            "title": "The Original Super Donut",
+            "price": 600,
+            "image": "./images/product-7.JPEG"
+        },
+        {
+            "id": 8,
+            "title": "The Original Super Donut",
+            "price": 1350,
+            "image": "./images/product-8.JPEG"
+        },
+        {
+            "id": 9,
+            "title": "The Original Super Donut",
+            "price": 5000,
+            "image": "./images/product-9.JPEG"
+        },
+        {
+            "id": 10,
+            "title": "The Original Super Donut",
+            "price": 1500,
+            "image": "./images/product-10.JPEG"
+        },
+        {
+            "id": 11,
+            "title": "The Original Super Donut",
+            "price": 650,
+            "image": "./images/product-11.JPEG"
+        }
+    ]
+}
