@@ -1,16 +1,5 @@
 /* ========= Colors ========= */
 
-:root {
-  --black: #222;
-  --white: #fff;
-  --default: #0751a5;
-  --orange: #ff7417;
-  --yellow: #d1b307;
-  --grey: #a0a3ad;
-  --grey2: #f9fafd;
-  --warn: #e71247;
-}
-
 /* ========= Reset ========= */
 
 *,
@@ -19,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: Raleway;
 }
 
 html {
@@ -73,59 +63,26 @@ li {
 }
 
 /* Navigation */
-.header{
-  background: radial-gradient(#fff,#ffd6d6);
-}
-.header .row{
-  margin-top: 70px;
-}
-
-.container{
-  max-width: 1300px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  line-height: 1rem;
+  background-color:#ffd6d6;
 
 }
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 .hamburger {
   display: none;
 }
-.menu{
-  align-content: left;
-
-}
-
-
-
-
-
-
-
 
 .nav__center {
-  
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .nav__logo {
@@ -137,27 +94,20 @@ li {
   color: var(--orange);
 }
 
-.add {
-  background-color:transparent;
-  padding:8px;
-  transition: 0.5s;
-  border-radius: 2%;
-  padding: 8px 30px;
-  margin: 30px 0;
-  border-radius: 30px;
-
-}
-.add:hover{
-  background: #0739dd;
+.nav__list {
+  display: flex;
+  align-items: center;
 }
 
 .login {
-  display: inline-block;
-  font-size: 1.7rem;
-  margin-right: 2rem;
-  padding: 1.3rem 1.5rem;
-  color: var(#555);
-  background-color:#555 ;
+ background-color:transparent;
+    padding:8px;
+    transition: 0.5s;
+    border-radius: 2%;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    color: black;
 }
 
 .login:focus {
@@ -165,15 +115,11 @@ li {
 }
 
 .cart__icon {
-  position: right;
+  position: relative;
   cursor: pointer;
-
+  top: -35px;
 }
 
-.cart__icon h2 {
-  font-weight: 700;
-  color: var(--orange);
-}
 
 .cart__icon span {
   position: absolute;
@@ -182,10 +128,10 @@ li {
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   background-color: var(--warn);
-  color: var(--white);
+  color: orangered;
   padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -202,7 +148,6 @@ li {
 
 .products {
   padding: 15rem 0;
-  background-color: #ffd6d6;
 }
 
 .product__center {
@@ -214,6 +159,7 @@ li {
 
 .product {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -239,57 +185,21 @@ li {
   align-items: center;
   padding: 0 2rem;
 }
-
-
-.col-2{
-  flex-basis: 50%;
-  max-width: 300px;
-  align-items: right;
-}
-
-.col-2 hi{
-   font-size: 300px;
-   line-height: 60px;
-   margin: 25px 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.btn {
+.btn{
+   
   display: inline-block;
-  border: 1px solid var(--grey);
-  padding: 1rem 1.8rem;
-  color: var(--black);
-  font-weight: 500;
-  font-size: 1.7rem;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
+  background: #ff523b;
+  color:#fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+
 }
 
-.btn:hover {
-  background-color: var(--orange);
-  color: var(--white);
-  border: 1px solid var(--orange);
-}
 
 .price {
   font-weight: 700;
@@ -320,7 +230,7 @@ li {
   border-radius: 2rem;
   z-index: 3;
   overflow-y: scroll;
-  background-color: var(--grey2);
+  background-color: #ffd6d6;
   opacity: 0;
   visibility: hidden;
   transition: all 300ms ease-in-out;
@@ -404,11 +314,16 @@ li {
 
 .cart__item .remove__item {
   cursor: pointer;
+  
+  background-image:url(images/delete.ico) ;
+  height: 20px;
+  width: 60px;
+
+ 
+  
 }
 
-.cart__item .remove__item svg {
-  fill: var(--warn);
-}
+
 
 @media only screen and (max-width: 1350px) {
   .cart__item {
@@ -428,6 +343,7 @@ li {
   .cart__item .remove__item svg {
     width: 1.6rem;
     height: 1.6rem;
+  
   }
 
   .cart__item img {
@@ -451,9 +367,11 @@ li {
   display: inline-block;
   padding: 1.5rem 3rem;
   font-size: 2rem;
-  background-color: var(--orange);
-  border: none;
+  background-color:ff523b ;
+  border-radius: 10px;
   margin-top: 2rem;
+  cursor: pointer;
+
 }
 
 .cart__footer .btn:focus {
@@ -476,176 +394,5 @@ li {
     padding: 0.8rem 1.5rem;
     font-size: 1.6rem;
   }
-
-
 }
-/*------------footer------*/
-.footer{
-  background: #000;
-  color: #1b2b88;
-  font-size: 14px;
-  padding: 60px 0 20px;
-}
-.footer p{
-  color:#6e76c0;
-
-}
-.footer h3{
-  color: white;
-  margin-bottom: 20px;
-}
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-  min-width:250px;
-  margin-bottom: 20px;
-}
-.footer-col-1{
-  flex-basis: 30%;
-}
-.footer-col-2{
-     flex: 1;
-     text-align: center;
-}
-.footer-col-2 img{
-  width: 180px;
-  margin-bottom: 20px;
-}
-.footer-col-4{
- flex-basis: 12%;
- text-align: center;
-}
-ul{
-  list-style-type: none;
-}
-
-.app-logo{
-margin-top: 20px;
-}
-.app-logo img{
-width: 140px;
-}
-.footer hr{
-border: none;
-background: #b5b5b5;
-height: 1px;
-margin: 20px 0;
-
-}
-.Copyright{
-text-align: center;
-}
-
-
-/*-----------   About -------------*/
-
-
-
-
-.tecno{
-    
-  background-color:blue;
-  border: none;
-  padding:0;
-  Margin: 5px;
-
-}
-
-.Beth{
-  position: absolute;
-  width: 500px;  
-  height: 500px; 
-}
-
-.add{
-  background-color:transparent;
-  padding:8px;
-  transition: 0.5s;
-  border-radius: 2%;
-  padding: 8px 30px;
-  margin: 30px 0;
-  border-radius: 30px;
-}
-.add:hover{
-  background: #0739dd;
-}
-
-
-/*--------------account-page-------------*/
-.account-page{
-  padding:  50px 0;
-  background: radial-gradient( yellow,brown);
-
-}
-.form-container {
-  background: white;
-  width: 300px;
-  height: 400px;
-  position:relative;
-  text-align: center;
-  padding: 20px 0;
-  margin: auto;
-  box-shadow:0 0 20px 0px rgba(0,0,0,0.1);
-  overflow: hidden;
-}
-
-.form-container span{
- font-weight:bold;
- padding: 0 10px;
- color: #555;
- cursor: pointer;
- width: 100px;
- display: inline-block;
-
-}
-.form-btn{
- display: inline-block;
-
-}
-.form-container form{
- max-width: 300px;
- padding: 0 20px;
- position: absolute;
- top: 130px ;
- transition: transform 1s;
-}
-form input{
-  width: 100%;
-  height: 30px;
-  margin: 10px 0;
-  padding: 0 10px;
-  border: 1px solid #ccc;
-
-}
-form .btn{
-width: 100%;
-border: none;
-cursor: pointer;
-}
-form .btn:focus{
-outline: none;
-}
-#LoginForm{
-  left: -300px;
-
-}
-#RegForm{
-left: 0;
-
-}
-form a{
-font-size: 12px;
-
-}
-#Indicator{
-width: 100px;
-border: none;
-background: #ff523b;
-height: 3px;
-margin-top: 8px;
-transform: translateX(100px) ;
-transition: transform 1s;
-}
-
-
-
-
 

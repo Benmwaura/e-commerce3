@@ -53,9 +53,9 @@ class UI {
           <div class="bottom">
             <div class="btn__group">
               <button class="btn addToCart" data-id= ${id} >Add to Cart</button>
-              <button class="btn view">View</button>
+              <button class="btn view">view</button>
             </div>
-            <div class="price">ksh{price}</div>
+            <div class="price">$${price}</div>
           </div>
         </div>
       </div>
@@ -75,12 +75,14 @@ class UI {
       if (inCart) {
         button.innerText = "In Cart";
         button.disabled = true;
+      
       }
 
       button.addEventListener("click", e => {
         e.preventDefault();
         e.target.innerHTML = "In Cart";
         e.target.disabled = true;
+      
 
         // Get product from products
         const cartItem = { ...Storage.getProduct(id), amount: 1 };
@@ -133,8 +135,9 @@ class UI {
               </svg>
             </span>
           </div>
-
-            <span class="remove__item" data-id=${id}>
+           
+           
+            <span><button class="remove__item" data-id=${id}>Remove</button>
               <svg>
                 <use xlink:href="./images/sprite.svg#icon-trash"></use>
               </svg>

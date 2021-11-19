@@ -4,18 +4,18 @@
             "id": 1,
             "title": "The Original Super Donut",
             "price": 135,
-            "image": "./images/product-1.JPEG"
+            "image": "./images/product-1.jpg"
         },
         {
             "id": 2,
-            "title": "MICROWAVE ",
-            "price":  ksh 950,
-            "image": "./images/product-2.JPEG"
+            "title": "The Original Super Donut",
+            "price": 950,
+            "image": "./images/product-2.jpg"
         },
         {
             "id": 3,
-            "title": "500GB HARD DISK",
-            "price": 500,
+            "title": "The Original Super Donut",
+            "price": 750,
             "image": "./images/product-3.JPEG"
         },
         {
@@ -47,19 +47,19 @@
         {
             "id": 8,
             "title": "The Original Super Donut",
-            "price": 1350,
+            "price": 350,
             "image": "./images/product-8.JPEG"
         },
         {
             "id": 9,
             "title": "The Original Super Donut",
-            "price": 5000,
+            "price": 799,
             "image": "./images/product-9.JPEG"
         },
         {
             "id": 10,
             "title": "The Original Super Donut",
-            "price": 1500,
+            "price": 150,
             "image": "./images/product-10.JPEG"
         },
         {
@@ -67,6 +67,30 @@
             "title": "The Original Super Donut",
             "price": 650,
             "image": "./images/product-11.JPEG"
+        },
+        {
+            "id": 12,
+            "title": "The Original Super Donut",
+            "price": 650,
+            "image": "./images/product-12.JPEG"
+        },
+        {
+            "id": 13,
+            "title": "HP NOTEBOOK PRO",
+            "price": 65000,
+            "image": "./images/product-13.JPEG"
+        },
+        {
+            "id": 14,
+            "title": "LG friedge utrla cooler",
+            "price": 65000,
+            "image": "./images/product-14.JPEG"
+        },
+        {
+            "id": 15,
+            "title": "HP NOTEBOOK PRO",
+            "price": 65000,
+            "image": "./images/product-13.JPEG"
         }
     ]
 }
